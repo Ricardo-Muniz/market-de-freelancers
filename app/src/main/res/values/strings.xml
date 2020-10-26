@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Freelancer</string>
+    <string name="luzdedesign">\@luzdedesign</string>
+    <string name="space">\@</string>
+    <string name="large_text_test">Building RESTful web services, like other programming skills is part art, part science. As the Internet industry progresses, creating a REST API becomes more concrete with emerging best practices. As RESTful web services dont follow a prescribed standard except for HTTP, its important to build your RESTful API in accordance with industry best practices to ease development and increase client adoption.</string>
+    <string name="txt_see_more">See More</string>
+</resources>

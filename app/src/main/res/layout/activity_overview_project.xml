@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorDrk"
+    tools:context=".Activity.OverviewProject">
+
+    <ProgressBar
+        android:id="@+id/progress_overview_project"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scroll_overview_project"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:animateLayoutChanges="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="@color/colorDrk">
+
+            <FrameLayout
+                android:id="@+id/frame_image_more_project"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_wallpaper_overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@null" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_exit_overview_project"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:backgroundTint="@color/colorDrk"
+                        android:elevation="0dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="7dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_cancel_x_light" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/label_text_more_details_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame_image_more_project"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_category_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:textStyle="bold"
+                    android:includeFontPadding="false"
+                    android:maxWidth="220dp"
+                    android:text="Design —"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_title_description_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:lineSpacingExtra="-15dp"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:text="Ilustração"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="23sp" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:letterSpacing="0"
+                        android:text="@string/space"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_name_user_overview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:letterSpacing="0.02"
+                        android:text="iuana"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_work_label_card_jobs_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="0.02"
+                    android:text="@string/luzdedesign"
+                    android:textColor="@color/colorGreen"
+                    android:textFontWeight="700"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_more_images_info_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_text_more_details_project"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_overview_shots"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="8dp"
+                    android:clipToPadding="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_more_images_info_project"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="30dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_more_information_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="18dp"
+                    android:animateLayoutChanges="true"
+                    android:backgroundTint="@color/colorDrk"
+                    android:elevation="0dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_card_view_more"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            w<TextView
+                                android:id="@+id/tv_more_details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:fontFamily="@font/cairo_semibold"
+                                android:text="More details"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:id="@+id/layout_icon_more_text_card"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/iv_icon_more_text_project"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_arrow_dowm_list_category" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_card_more_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:layout_below="@+id/layout_card_view_more"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="5dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_description_overview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/cairo"
+                                android:lineSpacingExtra="-8dp"
+                                android:textSize="15sp"
+                                android:text="@string/large_text_test"
+                                android:textColor="@color/colorLight020" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

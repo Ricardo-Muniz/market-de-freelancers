@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorSecondary</item>
+        <item name="colorPrimaryDark">@color/colorDrk</item>
+        <item name="colorAccent">@color/colorAlertOrange</item>
+        <item name="colorControlHighlight">@color/colorsemiDark</item>
+    </style>
+
+    <style name="BottomSheetLogin" parent="@style/Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/colorDrk</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="colorPrimaryDark">@color/colorDrk</item>
+    </style>
+
+
+    <style name="AppCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardBackgroundColor">@color/colorDrk</item>
+        <item name="strokeColor">@color/colorSecondary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="TextLabel" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColorHint">@color/colorLight030</item>
+        <item name="android:textSize">15sp</item>
+        <item name="colorControlNormal">@color/colorLight030</item>
+        <item name="colorControlActivated">@color/colorAlertOrange</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColorHint">@color/colorLight030</item>
+        <item name="android:textSize">15sp</item>
+        <item name="colorControlNormal">@color/colorLight030</item>
+        <item name="colorControlActivated">@color/colorAlertOrange</item>
+    </style>
+
+    <style name="Star" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorGreen</item>
+        <item name="colorPrimaryDark">@color/colorGreen</item>
+        <item name="colorAccent">@color/colorError</item>
+        <item name="colorControlHighlight">@color/colorsemiDark</item>
+    </style>
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/colorLowGray</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorGreen</item>
+        <item name="colorPrimaryDark">@color/colorGreen</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="colorControlHighlight">@color/colorsemiDark</item>
+    </style>
+
+</resources>
